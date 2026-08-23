@@ -307,10 +307,10 @@ const ICONS = {
 function renderHub(){
   const tiles=[
     {t:"Call Tracker",       s:"Open the trackers · pick year & month", href:TRACKER.folderUrl,       ic:"tracker"},
-    {t:"Staff Contacts",     s:"Menzies Yellow Pages directory",   href:webLink(CONTACTS.staff),        ic:"staff"},
-    {t:"Emergency Contacts", s:"Police · fire · medical · rescue", href:CONTACTS.emergency,             ic:"emergency"},
-    {t:"Airline Contacts",   s:"Carrier ops & duty desks",         href:CONTACTS.airline,               ic:"airline"},
-    {t:"Airport Contacts",   s:"Tower · AODB · airport authority", href:CONTACTS.airport,               ic:"airport"},
+    {t:"Staff Contacts",     s:"Menzies Yellow Pages",   href:webLink(CONTACTS.staff),        ic:"staff"},
+    {t:"Emergency Contacts", s:"Police · Fire · Medical · Rescue", href:CONTACTS.emergency,             ic:"emergency"},
+    {t:"Airline Contacts",   s:"Airline Managers & SOCC",         href:CONTACTS.airline,               ic:"airline"},
+    {t:"Airport Contacts",   s:"Tower · Ramp Office · AOC", href:CONTACTS.airport,               ic:"airport"},
   ];
   document.getElementById('hub').innerHTML=tiles.map(x=>{
     const todo = !x.href || x.href==="#" || x.href.startsWith("#?");
